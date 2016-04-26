@@ -6,9 +6,9 @@ zeroInit([H | _]) :- H =:= 0.
 
 %2
 
-qtde([],0).
-qtde([_|T],S) :- qtde(T,G),S is 1+G.
-has5(L) :- qtde(L,N), N=:=5.
+aux([],0).
+aux([_|T],S) :- aux(T,G),S is 1+G.
+has5(L) :- aux(L,N), N=:=5.
 
 
 %3
