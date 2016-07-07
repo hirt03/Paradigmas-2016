@@ -5,6 +5,8 @@
  */
 package t9;
 
+import java.net.MalformedURLException;
+
 /**
  *
  * @author Hirt
@@ -14,8 +16,11 @@ public class T9 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MalformedURLException {
+        
+        restfbb a;
         // TODO code application logic here
+        a = new restfbb();
     }
     
 }
